@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "homepage": "https://Sushil-0077.github.io/Personal_Portfolio_Website",
+    "homepage": " https://sushil-0077.github.io/Personal_Portfolio_Website/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
