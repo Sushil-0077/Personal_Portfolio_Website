@@ -1,0 +1,164 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.about_me_container {
+    padding: 20px;
+    background-color: #f0f4f8;
+    animation: fade_in 3s ease-in;
+}
+
+.section {
+    margin-bottom: 40px;
+    animation: fade_in 3s ease-in;
+}
+
+.section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.profile_section {
+    display: flex;
+    align-items: center;
+}
+
+.profile_image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile_image:hover {
+    transform: scale(1.1);
+}
+
+.content_with_image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: fade_in 3s ease-in;
+}
+
+.content_with_image img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content_with_image img:hover {
+    transform: scale(1.05);
+}
+
+.content_info {
+    flex: 1;
+}
+
+.content_with_image.reverse {
+    flex-direction: row-reverse;
+}
+
+.profile_info {
+    flex: 1;
+}
+
+
+.profile_info p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.profile_info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.profile_info ul li {
+    font-size: 1.1em;
+    margin-bottom: 5px;   
+}
+.about_me_container{
+    animation: slide_in 2s ease-in-out;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.profile_info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family:math;
+}
+/* Animations */
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide_in {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide_in_left {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide_in_right {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes move_image {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.move_image {
+    animation: move_image 0.5s ease-in-out;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .profile_section,.content_with_image{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+}
+

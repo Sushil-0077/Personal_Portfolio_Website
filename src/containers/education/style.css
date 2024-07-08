@@ -1,0 +1,125 @@
+/* Container styles */
+.education_container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.education_link{
+    text-decoration: none;
+}
+.education_title {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.education_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.education_card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.education_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.education_card_inner {
+    padding: 20px;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.education_level {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.education_result {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.education_institution {
+    font-size: 1em;
+    color: #888;
+    margin-top: 10px;
+}
+
+.education_location {
+    font-size: 0.9em;
+    color: #aaa;
+}
+.education_institution:hover, .education_location:hover{
+    color:rgb(27, 3, 3)
+}
+/* Keyframes for animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .education_card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .education_card {
+        width: 100%;
+    }
+
+    .education_title {
+        font-size: 2em;
+    }
+
+    .education_level {
+        font-size: 1.2em;
+    }
+
+    .education_result {
+        font-size: 1em;
+    }
+
+    .education_institution {
+        font-size: 0.9em;
+    }
+
+    .education_location {
+        font-size: 0.8em;
+    }
+}
+

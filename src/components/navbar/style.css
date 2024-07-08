@@ -1,0 +1,154 @@
+.navbar_main_container {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.navbar_main_container_holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.distination {
+    font-size: 1.5em;
+}
+
+.menu_button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.navbar_list_container {
+    display: flex;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar_list {
+    margin: 0 10px;
+}
+
+.navbar_list_link {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.navbar_list_link:hover {
+    color: #f0f0f0;
+}
+
+.navbar_list_link svg {
+    margin-right: 8px;
+}
+
+.navbar_list_label {
+    display: inline;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .menu_button {
+        display: block;
+    }
+
+   
+.navbar_list_container {
+    position: absolute; /* Position absolutely */
+    top: 100%; /* Position below the navbar */
+    left: 0; /* Align with navbar */
+    width: 100%; /* Take full width */
+    background-color: #333; /* Match navbar background */
+    display: none; /* Initially hide */
+    z-index: 2; /* Ensure above content */
+}
+
+.navbar_list_container.open {
+    display: block; /* Show when menu is open */
+}
+
+    .navbar_main_container_holder {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .distination {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .navbar_menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar_list {
+        margin: 5px 0;
+    }
+
+    .navbar_list_link {
+        font-size: 1.2em;
+    }
+    .navbar_main_container {
+        position: relative; /* Ensure relative positioning */
+        z-index: 1; /* Ensure navbar stays above other content */
+        /* Existing styles */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar_main_container {
+        padding: 10px;
+    }
+
+    .distination {
+        font-size: 1em;
+    }
+
+    .navbar_list_link {
+        font-size: 1em;
+    }
+
+    .navbar_list_link svg {
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .distination {
+        font-size: 0.9em;
+    }
+
+    .navbar_list_link {
+        font-size: 0.9em;
+    }
+
+    .navbar_list_link svg {
+        margin-right: 4px;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+/* Ensure the html and body take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container styles to occupy full viewport */
+.main_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    animation: fadeIn 1s ease-in-out; /* Animation for container */
+}
+
+/* Information Section Styles */
+.information {
+    flex: 2;
+    max-width: 24%;
+    animation: slideInLeft 1s ease-in-out; /* Animation for information */
+}
+
+.information h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+.information h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+/* Image Section Styles */
+.pic {
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideInRight 1s ease-in-out; /* Animation for pic */
+}
+
+.pic img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+}
+
+/* Additional Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef;
+    margin: 0;
+    height: 100%;
+}
+
+/* Hover Effects */
+.information h1:hover, .information h3:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.pic img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .information {
+        max-width: 30%;
+    }
+
+    .pic img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main_container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .information, .pic {
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .pic img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .information h1 {
+        font-size: 1.5em;
+    }
+
+    .information h3 {
+        font-size: 1em;
+    }
+
+    .pic img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .information, .pic {
+        max-width: 100%;
+    }
+
+    .information h1 {
+        font-size: 1.2em;
+    }
+
+    .information h3 {
+        font-size: 0.9em;
+    }
+
+    .pic img {
+        width: 120px;
+        height: 120px;
+    }
+}
