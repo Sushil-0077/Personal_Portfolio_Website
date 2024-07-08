@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Personal_Portfolio_Website/static/css/main.e759642d.css",
+    "main.js": "/Personal_Portfolio_Website/static/js/main.e387f8ef.js",
+    "static/media/profile.jpg": "/Personal_Portfolio_Website/static/media/profile.ec2a85e052a827eb0130.jpg",
+    "static/media/Resume.jpg": "/Personal_Portfolio_Website/static/media/Resume.8715140316f4e98e0727.jpg",
+    "static/media/courses.jpg": "/Personal_Portfolio_Website/static/media/courses.905a3558dba68e78117a.jpg",
+    "static/media/Sushil-Budha-Resume.pdf": "/Personal_Portfolio_Website/static/media/Sushil-Budha-Resume.87939dbcf5854d20bd92.pdf",
+    "static/media/coding.jpeg": "/Personal_Portfolio_Website/static/media/coding.cc22267f35369467b374.jpeg",
+    "index.html": "/Personal_Portfolio_Website/index.html",
+    "main.e759642d.css.map": "/Personal_Portfolio_Website/static/css/main.e759642d.css.map",
+    "main.e387f8ef.js.map": "/Personal_Portfolio_Website/static/js/main.e387f8ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e759642d.css",
+    "static/js/main.e387f8ef.js"
+  ]
+}
